@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dumble Fitness Club</title>
+  <style>
+    /* Global Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Baloo Bhai 2", Papyrus;
+        background: url(https://wallpaperaccess.com/full/2465431.jpg);
+    background-size: 1800px;
+    background-color: #ffffff;
+        color: #712828;
+    }
+
+    /* Header Styles */
+    .head {
+      background: url(https://wallpaperaccess.com/full/2465431.jpg);
+      background-size: 1800px;
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .left {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .left img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .mid {
+        display: inline-block;
+    }
+
+    .navbar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar li {
+        margin-right: 20px;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .right {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    /* Content Styles */
+    .cont {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        background: url(https://wallpaperaccess.com/full/2465431.jpg);
+        background-size: 1000px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(137, 81, 81, 0.1);
+    }
+
+    .cont h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .formgroup {
+        margin-bottom: 20px;
+    }
+
+    .formgroup input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px; 
+                border: 1px solid #3e3535;
+        border-radius: 5px;
+    }
+
+    .btn {
+        background-color: #702a2a;
+        background: url(https://wallpaperaccess.com/full/2465431.jpg);
+        color: #de1212;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #555;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+        }
+
+        .navbar li {
+            margin-bottom: 10px;
+        }
+
+        .cont {
+            margin: 20px auto;
+            padding: 10px;
+        }
+    }
+
+    @media (max-width: 580px) {
+        .cont h1 {
+            font-size: 5.5em;
+        }
+
+        .formgroup input {
+            padding: 50px;
+        }
+
+        .btn {
+            padding: 9px 10px;
+        }
+    }
+</style>
+</head>
+<body>
+  <header class="head">
+    <!-- left box for logo -->
+    <div class="left">
+      <img src="" alt="Dumble Fitness Club" />
+      <div>Fitness Club </div>
+    </div>
+    <!-- mid box for navigation -->
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Fitness Calculator</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- left box for button -->
+    <div class="right">
+      <button class="btn">Call Us Now</button>
+      <button class="btn">Email Us</button>
+    </div>
+  </header>
+  <div class="cont">
+    <h1>Join the best GYM of Mathura now!</h1>
+    <form action="#noaction.php">
+      <div class="formgroup">
+        <input type="text" name="" placeholder="Enter Name" />
+      </div>
+      <div class="formgroup">
+        <input type="text" name="" placeholder="Enter Age" />
+      </div>
+      <div class="formgroup">
+        <input type="text" name="" placeholder="Enter Gender" />
+      </div>
+      <div class="formgroup">
+        <input type="text" name="" placeholder="Enter Your Locality" />
+      </div>
+      <button class="btn submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
